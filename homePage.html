@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" id="top-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homePage.css">
+    <title>Restaurant Chez Jonathan Pizzeria</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <!-- mobile uniquement-->
+
+        <div class="menu-burger">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/icones/menu.svg" alt="Icône menu" class="icon-menu">
+            </a>
+
+            <div id="myLinks">
+                <a href="#about-section">Qui sommes-nous ?</a>
+                <a href="pizzasPage.html">Nos pizzas</a>
+                <a href="commandePage.html">Commander</a>
+            </div>
+        </div>
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+        <!-- -->
+
+        <a href="homePage.html" class="logo"><img src="images/logos/logo.png" alt="Logo Chez Jonathan" class="logo-image" width="100px" height="100px"></a>
+
+        <!-- mobile uniquement-->
+
+        <a href="contactPage.html"><img src="images/icones/phone.png" class="icon-phone" alt="Icône Téléphone"></a>
+
+        <!-- -->
+
+        <div class="header-nologo">
+            <nav>
+                <ul>
+                    <li><a href="#about-section">Qui sommes-nous ?</a></li>
+                    <li><a href="pizzasPage.html">Nos pizzas</a></li>
+                    <li><a href="commandePage.html">Commander</a></li>
+                </ul>
+            </nav>
+
+            <a href="contactPage.html" class="button button-white" id="button-contact">Nous contacter</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- SECTION 1 : Presentation -->
+
+        <section class="section1">
+
+            <h1 class="title title-brown">Chez Jonathan</h1>
+            <h2 class="title title-pink" id="font-pizzeria">Pizzeria</h2>
+            <img src="images/illus/pizza.png" alt="Illustration pizza" class="illu-pizza" width="300rem" height="300rem">
+
+            <!-- Slider : Pizzas du moment -->
+
+            <div class="slider">
+
+                <img src="images/icones/arrow-blue.svg" alt="Flèche gauche du slider" class="arrows">
+                
+                <!-- slide 1 -->
+
+                <article class="article-famouspizza">
+                    <h3 class="title-article">La pizza du moment</h3>
+                    <p class="text-famous" id="text-famous1">Découvrez dans cet article l'histoire derrière notre pizza élue préférée du mois de septembre 2021 !
+                    La salmon a été conçue...</p>
+                    <p class="text-famous" id="text-famous2">Découvrez dans cet article l'histoire derrière notre pizza élue préférée du...</p>
+                    <a href="#" class="button button-blue">Lire la suite</a>
+                </article>
+
+                <!-- slide 2 -->
+
+                <article class="article-famouspizza articles1-2">
+                    <h3 class="title-article">La pizza du moment</h3>
+                    <p class="text-famous">Découvrez dans cet article l'histoire derrière notre pizza élue préférée du mois de septembre 2021 !
+                    La salmon a été conçue...</p>
+                    <a href="#" class="button button-blue">Lire la suite</a>
+                </article>
+
+                <!-- slide 3 -->
+
+                <article class="article-famouspizza articles1-2">
+                    <h3 class="title-article">La pizza du moment</h3>
+                    <p class="text-famous">Découvrez dans cet article l'histoire derrière notre pizza élue préférée du mois de septembre 2021 !
+                    La salmon a été conçue...</p>
+                    <a href="#" class="button button-blue">Lire la suite</a>
+                </article>
+
+                <img src="images/icones/arrow-blue.svg" alt="Flèche droite du slider" class="arrows arrow-right">
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 2 : A Propos -->
+
+        <section class="about" style="background-image: url(images/illus/wavy-background.png); background-size: cover;">
+
+            <div class="about-elements" id="about-section">
+
+                <article class="left-elements">
+
+                    <h2 class="title title-history">Une histoire</h2>
+                    <h2 class="title title-pink" id="title-family">de famille...</h2>
+
+                    <p class="text-about" id="text-about1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis urna purus, vitae pretium enim maximus
+                    cursus. Donec sit amet ipsum nec nisl consequat porta. Sed ut porttitor est, eu venenatis erat. Nunc malesuada
+                    dolor metus, at mollis augue tempor eu. Mauris commodo mauris ac massa feugiat, sit amet ultricies.
+                    </p>
+
+                    <p class="text-about" id="text-about2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis urna purus, vitae pretium enim maximus
+                    cursus. Donec sit amet ipsum nec nisl consequat porta. Sed ut porttitor est, eu venenatis erat.
+                    </p>
+                    
+                    <!-- <a href="#" class="button button-white button-big">En savoir plus</a> -->
+
+                </article>  
+
+                <img src="images/pizzaiolo.png" alt="Photo du pizzaiolo" id="photo1" width="450rem" height="450rem">
+
+            </div>
+            
+        </section>
+
+
+        <!-- SECTION 3 : Nos pizzas -->
+
+        <section class="nos-pizzas">
+
+            <article class="top-elements">
+
+                <img src="images/illus/ingredients.jpg" alt="Illustration d'ingrédients" class="illu-ingr1" width="470rem">
+
+                <div class="title-pizza">
+                    <h2 class="title title-brown">Nos pizza sont</h2>
+                    <h3 class="title title-pink" id="title-house">faites maison</h3>
+                </div>
+
+                <img src="images/illus/ingredients.jpg" alt="Illustration d'ingrédients (mobile)" class="illu-ingr2">
+
+            </article>
+
+
+            <article class="bottom-elements">
+
+                <p id="text-pizzas">Nos pizzas sont faites maison selon un savoir faire familial depuis 1875 avec des produits frais et locaux, et cuites
+                dans notre four au bois.
+                </p>
+
+                <img src="images/icones/house.png" alt="Icône maison" class="icon-house" width="180rem" height="180rem">
+
+            </article>
+            
+            <a href="pizzasPage.html" class="button button-pink button-big" id="nospizzas-button">Découvrir notre carte</a>
+            
+        </section>
+
+
+        <!-- SECTION 4 : Commentaires clients -->
+
+        <section class="customers">
+
+            <h2 class="title title-brown" id="title-comments">Ils nous ont fait confiance</h2>
+
+            <div class="slider" id="slider-comments">
+
+                <img src="images/icones/arrow-brown.svg" alt="Flèche gauche du slider" class="arrows" id="arrow-brownL">
+                
+                <!-- client1 -->
+                <article>
+
+                    <div class="article-bulle">
+                        <img src="images/icones/bubble.svg" alt="Bulle de commentaire" class="bubble">
+                        <p class="text-comments">'' La calzone est excellent, le tiramisu me rappelle ma grand-mère ''</p>
+                    </div>
+
+                    <div class="profil">
+                        <img src="images/client1.svg" alt="Photo client 1" class="photo-client1">
+                        <p class="text-profil">Guillaume Bocuse</p>
+                    </div>
+
+                </article>
+
+                <!-- client2 -->
+                <article class="client1-2">
+
+                    <div class="article-bulle">
+                        <img src="images/icones/bubble.svg" alt="Bulle de commentaire">
+                        <p class="text-comments">'' La calzone est excellent, le tiramisu me rappelle ma grand-mère ''</p>
+                    </div>
+
+                    <div class="profil">
+                        <img src="images/client2.svg" alt="Photo client 2">
+                        <p class="text-profil">Germaine Dubois</p>
+                    </div>
+
+                </article>
+
+                <!-- client3 -->
+                <article class="client1-2">
+
+                    <div class="article-bulle">
+                        <img src="images/icones/bubble.svg" alt="Bulle de commentaire">
+                        <p class="text-comments">'' La calzone est excellent, le tiramisu me rappelle ma grand-mère ''</p>
+                    </div>
+
+                    <div class="profil">
+                        <img src="images/client3.svg" alt="Photo client 3">
+                        <p class="text-profil">Guillaume Bocuse</p>
+                    </div>
+
+                </article>
+
+                <img src="images/icones/arrow-brown.svg" alt="Flèche droite du slider" class="arrows arrow-right" id="arrow-brownR">
+
+            </div>
+            
+        </section>
+
+        <!-- SECTION 5 : Livraison -->
+
+        <section class="section-delivery">
+
+            <article class="delivery-elements">
+
+                <div>
+
+                    <h2 class="title title-brown" id="title-delivery1">On vous livre</h2>
+                    <h3 class="title title-pink" id="title-delivery2">chez vous !</h3>
+
+                    <ul class="logos-delivery">
+                        <li><a href="#"><img src="images/logos/uber-eats.svg" alt="Logo Uber Eats" class="img-logo"></a></li>
+                        <li><a href="#"><img src="images/logos/deliveroo.svg" alt="Logo Deliveroo" class="img-logo"></a></li>
+                        <li><a href="#"><img src="images/logos/just-eat.svg" alt="Logo Just Eat" class="img-logo"></a></li>
+                    </ul>
+
+                </div>
+
+                <img src="images/illus/livreur.png" alt="Illustration d'un livreur" class="illus-delivery">
+
+            </article>
+
+            <a href="commandePage.html" class="button button-pink" id="button-command">Ou commander sur notre site !</a>
+            
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <nav class="nav-footer">
+        <ul class="text-footer">
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="contactPage.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+    </footer>
+
+    <a href="#top-page"><img src="images/icones/arrow-top.png" alt="Flêche menant en haut de la page" class="arrow-top"></a>
+
+</body>
+
+</html>

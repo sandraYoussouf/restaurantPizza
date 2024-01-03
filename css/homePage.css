@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Couleurs : #df5e5e ROSE, #fff8e5 BEIGE, #5b454e MARRON, #06a19d BLEU, #ffb345 ORANGE*/
+
+:root{
+
+    --font-title1: 'Ephesis', cursive;
+    --font-title2: 'Quicksand', serif;
+    --font-p: 'Montserrat', sans-serif;
+    --font-size-title: 112px;
+    --font-size-p: 18px;
+    --font-size-button1: 20px;
+    --font-size-button2: 24px;
+    --pink: #df5e5e;
+    --dark-pink: #bf4d4d;
+    --blue: #06a19d;
+    --dark-blue: #046864;
+    --brown: #5b454e;
+    --beige: #fff8e5;
+
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+*::selection {
+    background-color: #ffa5a51a;
+}
+
+.button{
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    color: var(--pink);
+    background-color: white;
+    font-family: var(--font-title2);
+    padding: 0.6rem 1rem; /* T&B L&R */
+    transition: all 0.5s;
+}
+
+.button-blue{
+    color: white;
+    background-color: var(--blue);
+}
+
+.button-pink{
+    color: white;
+    background-color: var(--pink);
+}
+
+.button-white:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.347);
+}
+
+.button-blue:hover{
+    background-color: var(--dark-blue);
+}
+
+.button-pink:hover{
+    background-color: var(--dark-pink);
+}
+
+/* HEADER */
+
+header{
+    background-color: #df5e5e;
+    display: flex;
+    width: 100%;
+    padding: 0rem 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header-nologo{
+    width: 100%;
+    display: flex;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.icon-phone{
+    display: none;
+}
+
+.logo-image{
+    transition: all 0.5s;
+}
+
+.logo-image:hover{
+    opacity: 0.7;
+}
+
+nav {
+    width: 100%;
+}
+
+.header-nologo > nav{
+    margin-left: 3rem;
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul li{
+    text-align: center; 
+    font-size: var(--font-size-button1);
+    font-family: var(--font-title2);
+    margin: 2.5rem 2rem;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    opacity: 0.5;
+}
+
+#button-contact{
+    width: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: var(--font-size-button1);
+}
+
+/* MAIN */
+
+/* Section 1 : Presentation */
+.section1{
+    margin-top: 10rem;
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-weight: lighter;
+    font-family: var(--font-title1);
+    font-size: var(--font-size-title);
+}
+
+.title-brown{
+    color: var(--brown);
+}
+
+.title-pink{
+    color: var(--pink);
+    position: relative;
+    bottom: 4rem;
+    left: 16rem;
+}
+
+#font-pizzeria{
+    margin-right: auto;
+    margin-left: auto;
+    left: 0rem;
+    font-size: 90px;
+}
+
+.illu-pizza{
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+/* slider : Pizzas du moment */
+
+.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.arrows{
+    width: 4rem; 
+    height: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.5s;
+}
+
+.arrow-right{
+    transform: rotate(180deg);
+}
+
+.arrows:hover{
+    width: 2.7rem; 
+    height: 2.7rem;
+    cursor: pointer;
+}
+
+.article-famouspizza{
+    width: calc(80%/3);
+    height: 22rem;
+    margin: 0rem 1rem; /* T&B L&R */
+    padding: 3.4rem;
+    border-radius: 2rem;
+    background-color: var(--beige);
+}
+
+.title-article{
+    color: var(--pink);
+    font-size: 2rem;
+    font-family: var(--font-title2);
+}
+
+p{
+    color: var(--brown);
+    font-size: var(--font-size-p);
+    font-family: var(--font-p);
+}
+
+.text-famous{
+    text-align: left;
+    padding: 1rem 0rem 2rem 0rem; /* T R B L */
+}
+
+#text-famous2{
+    display: none;
+}
+
+/* Section 2 : A Propos */
+
+.about{
+    width: 100%;
+    height: 55rem;
+    margin-top: -7rem;
+    
+}
+
+.about-elements{
+    padding-left: 8rem;
+    padding-top: 16rem;
+    display: flex;
+    justify-content: center;
+}
+
+.left-elements{
+    width: calc(100%/2);
+}
+
+.title-history{
+    margin-left: -5rem;
+}
+
+#title-family{
+    left: 12rem;
+    color: white;
+}
+
+.text-about{
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+    font-size: 24px;
+    color: white;
+}
+
+#text-about1{
+    display: block;
+}
+
+#text-about2{
+    display: none;
+}
+
+.button-big{
+    display: block;
+    width: 15rem;
+    height: 3.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.8rem;
+    font-size: var(--font-size-button2);
+}
+
+#photo1{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+/* Section 3 : Nos Pizzas */
+
+.nos-pizzas{
+    width: 73%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-elements{
+    display: flex;
+}
+
+.bottom-elements{
+    display: flex;
+}
+
+.illu-ingr2{
+    display: none;
+}
+
+.title-pizza{
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+}
+
+/* .titlepink-position{
+    position: relative;
+    bottom: 4rem;
+    left: 16rem;
+} */
+
+#text-pizzas{
+    margin-top: 2rem;
+    font-size: 32px;
+}
+
+.icon-house{
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+#nospizzas-button{
+    position: relative;
+    top: 1rem;
+    width: 21rem;
+    height: 4rem;
+    padding-top: 1rem;
+}
+
+/* Section 4 : Commentaires clients */
+
+#slider-comments{
+    padding: 5rem;
+    background-color: #ffb345;
+    justify-content: space-between;
+}
+
+.customers{
+    text-align: center;
+}
+
+.article-bulle{
+    height: 15rem;
+}
+
+#title-comments{
+    position: relative;
+    top: 4.5rem;
+}
+
+.text-comments{
+    text-align: left;
+    position: relative;
+    left: 1.8rem;
+    bottom: 12.5rem;
+    width: 18rem;
+    font-size: var(--font-size-button2);
+}
+
+.profil{
+    display: flex;
+    position: relative;
+    left: 0.7rem;
+}
+
+.text-profil{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.8rem;
+    font-family: var(--font-title2);
+    font-size: var(--font-size-button2);
+}
+
+#arrow-brownL{
+    position: relative;
+    left: 1rem;
+}
+
+#arrow-brownR{
+    position: relative;
+    right: 1rem;
+}
+
+/* Section 5 : Livraison */
+
+.section-delivery{
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.delivery-elements{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos-delivery{
+    position: relative;
+    left: 4rem;
+    justify-content: space-between;
+}
+
+.illus-delivery{
+    margin-left: auto;
+    /* position: relative;
+    left: 15rem; */
+}
+
+#button-command{
+    display: block;
+    width: 33rem;
+    height: 5rem;
+    padding-top: 1.2rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--blue);
+}
+
+.text-footer{
+    gap: 5rem;
+    justify-content: center;
+}
+
+footer nav ul li a{
+    font-family: var(--font-p);
+}
+
+.arrow-top{
+    position: fixed;
+    width: 3rem;
+    right: 2rem;
+    bottom: 2rem;
+    transition: all 0.5s;
+}
+
+.arrow-top:hover{
+    opacity: 0.5;
+}
+
+
+
+/* RESPONSIVE */
+
+@media ( width <= 751px ) {
+
+    /* HEADER */
+
+    header{
+        padding: 0rem 2rem;
+    }
+
+    .header-nologo{
+        display: none;
+    }
+
+    .logo{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logo-image{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .icon-phone{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1.9rem;
+        transition: all 0.5s;
+    }  
+
+    .icon-phone:hover{
+        opacity: 0.5;
+    }
+    
+        /* menu burger */
+
+    .menu-burger {
+        display: block;
+    }
+
+    .menu-burger #myLinks {
+        display: none;
+        position: absolute;
+        top: 6.2rem;
+        left: 0;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--dark-pink);
+    }
+
+    .icon-menu{
+        margin-top: 2.2rem;
+    }
+    
+    .menu-burger #myLinks a {
+        display: block;
+        padding: 14px 16px;
+        color: white;
+        font-size: 17px;
+        font-family: var(--font-title2);
+        transition: all 0.5s;
+    }
+
+    .menu-burger #myLinks a:hover {
+        color: var(--pink);
+        background-color: white;
+    }
+
+    /* MAIN */
+    
+    /* Section 1 : Presentation */
+    .title{
+        font-family: var(--font-title1);
+        font-size: 55px;
+    }
+    
+    .title-pink{
+        color: var(--pink);
+        position: relative;
+        bottom: 1.8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #font-pizzeria{
+        left: 0rem;
+        font-size: 45px;
+    }
+
+    .illu-pizza{
+        width: 8rem;
+        height: 8rem;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
+    }
+
+    /* slider : Pizzas du moment */
+
+    .slider{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .arrows{
+        width: 2rem; 
+        height: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        transition: all 0.5s;
+    }
+    
+    .arrows:hover{
+        width: 2rem; 
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .articles1-2{
+        display: none;
+    }
+
+    .article-famouspizza{
+        width: 20rem;
+        height: 19rem;
+        padding: 3rem;
+    }
+
+    .title-article{
+        color: var(--pink);
+        font-size: 25px;
+        font-family: var(--font-title2);
+    }
+    
+    p{
+        color: var(--brown);
+        font-size: 16px;
+        font-family: var(--font-p);
+    }
+
+    #text-famous1{
+        display: none;
+    }
+
+    #text-famous2{
+        display: block;
+    }
+
+    /* Section 2 : A Propos */
+
+    .about{
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .about-elements{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 9rem;
+    }
+
+    #photo1{
+        display: none;
+    }
+
+    .left-elements{
+        width: 100%;
+    }
+
+    .title-history{
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    #title-family{
+        left: 7rem;
+    }
+
+    #text-about1{
+        display: none;
+    }
+
+    #text-about2{
+        display: block;
+        font-size: 18px;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+    }
+
+    .button-big{
+        width: 13rem;
+        height: 3rem;
+        padding-top: 0.6rem;
+        font-size: 20px;
+    }
+
+    /* Section 3 : Nos Pizzas */
+
+    .top-elements{
+        display: block;
+    }
+
+    .title-pizza {
+        position: static;
+        text-align: center;
+    }
+
+    #title-house{
+        position: static;
+        margin-top: -1.5rem;
+    }
+
+    .illu-ingr1{
+        display: none;
+    }
+
+    .illu-ingr2{
+        display: block;
+        width: 14rem;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #text-pizzas{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .icon-house{
+        display: none;
+    }
+
+    #nospizzas-button{
+        top: 2rem;
+        width: 15rem;
+        height: 3rem;
+        padding-top: 0.7rem;
+        font-size: 18px;
+    }
+
+    /* Section 4 : Commentaires clients */
+
+    .customers{
+        margin-top: 10rem;
+    }
+
+    #title-comments{
+        top: 2rem;
+        line-height: 0.8em;
+    }
+
+    #slider-comments{
+        padding: 0rem;
+    }
+
+    .bubble{
+        width: 220px;
+        height: 220px;
+    }
+
+    .text-comments{
+        left: 1.3rem;
+        bottom: 10.7rem;
+        width: 12rem;
+        font-size: 18px;
+    }
+
+    .profil{
+        left: 0.4rem;
+        bottom: 2.5rem;
+    }
+
+    .photo-client1{
+        width: 2.5rem;
+    }
+
+    .text-profil{
+        font-size: 18px;
+    }
+
+    .client1-2{
+        display: none;
+    }
+
+    /* Section 5 : Livraison */
+
+    .delivery-elements{
+        display: block;
+    }
+
+    #title-delivery1{
+        text-align: center;
+    }
+
+    #title-delivery2{
+        position: static;
+        text-align: center;
+        margin-top: -1.5rem;
+    }
+
+    .logos-delivery {
+        position: static;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .logos-delivery li a{
+        padding: 0rem 1rem;
+    }
+
+    .img-logo{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .illus-delivery{
+        display: none;
+    }
+
+    #button-command{
+        width: 17rem;
+        height: 3rem;
+        padding-top: 0.8rem;
+        margin-top: 4rem;
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        background-color: var(--blue);
+    }
+
+    .text-footer{
+        display: block;
+        padding: 1rem;
+    }
+
+    .nav-footer .text-footer li {
+        padding: 0rem;
+        margin: 0rem 0rem;
+        font-size: 16px;
+        padding: 0.2rem;
+    }
+
+}

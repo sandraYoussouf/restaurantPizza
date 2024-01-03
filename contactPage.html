@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" id="top-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactPage.css">
+    <title>Restaurant Chez Jonathan Pizzeria</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header1">
+
+            <!-- mobile uniquement-->
+
+            <div class="menu-burger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/icones/menu.svg" alt="Icône menu" class="icon-menu">
+                </a>
+
+                <div id="myLinks">
+                    <a href="homePage.html#top-page">Accueil</a>
+                    <a href="homePage.html#about-section">Qui sommes-nous ?</a>
+                    <a href="pizzasPage.html">Nos pizzas</a>
+                    <a href="commandePage.html">Commander</a>
+                </div>
+            </div>
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+
+            <!-- -->
+
+            <a href="homePage.html" class="logo"><img src="images/logos/logo.png" alt="Logo Chez Jonathan" class="logo-image" width="100px" height="100px"></a>
+
+            <!-- mobile uniquement-->
+
+            <a href="contactPage.html"><img src="images/icones/phone.png" class="icon-phone" alt="Icône Téléphone"></a>
+
+            <!-- -->
+
+            <div class="header-nologo">
+                <nav>
+                    <ul>
+                        <li><a href="homePage.html">Accueil</a></li>
+                        <li><a href="pizzasPage.html">Nos pizzas</a></li>
+                        <li><a href="commandePage.html">Commander</a></li>
+                    </ul>
+                </nav>
+
+                <a href="contactPage.html" class="button button-white" id="button-contact">Nous contacter</a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- Nos pizzas -->
+
+        <h1 class="title title-brown" id="pizzas">Nous contacter</h1>
+
+        <section>
+
+            <!-- Formulaire -->
+            <div class="contact-wrapper" id="form">
+
+                <form class="form-horizontal">
+        
+                <label class="title-label" for="name">Nom* :</label>
+                <input type="text" id="name" placeholder="Nom" name="name" required>
+        
+                <label class="title-label" for="email">Email* :</label>
+                <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+        
+                <label class="title-label" for="message">Message* :</label>
+                <textarea rows="10" id="message" placeholder="Ecrivez votre message ici" name="message" required></textarea>
+        
+                <button class="button button-pink" id="submit" type="submit">Envoyer</button>
+        
+                </form>
+        
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer1">
+
+            <div class="icon-delivery">
+                <img src="images/icones/delivery.png" alt="Icône d'un livreur" class="img-delivery">
+                <p class="text-delivery">Livraison</p>
+            </div>
+
+            <ul class="logos-delivery">
+                <li><a href="#"><img src="images/logos/uber-eats.svg" alt="Logo Uber Eats" class="img-logos"></a></li>
+                <li><a href="#"><img src="images/logos/deliveroo.svg" alt="Logo Deliveroo" class="img-logos"></a></li>
+                <li><a href="#"><img src="images/logos/just-eat.svg" alt="Logo Just Eat" class="img-logos"></a></li>
+            </ul>
+
+    </div>
+
+    <div class="footer2">
+        <nav class="nav-footer">
+            <ul class="text-footer">
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="contactPage.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
