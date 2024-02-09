@@ -1,1 +1,1 @@
-Lien Netlify menant au site : https://chezjonathanpizzeria.netlify.app/
+Lien Netlify menant au site : https://chez-jonathan-pizzeria.netlify.app/
