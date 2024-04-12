@@ -71,13 +71,16 @@
 /* HEADER */
 
 header{
-    background-color: #df5e5e;
-    display: flex;
-    width: 100%;
-    padding: 0rem 4rem;
     position: fixed;
     top: 0;
     z-index: 1;
+    width: 100%;
+}
+
+.header1{
+    background-color: #df5e5e;
+    display: flex;
+    padding: 0rem 4rem;
 }
 
 .header-nologo{
