@@ -649,7 +649,8 @@ footer nav ul li a{
     }
 
     #title-family{
-        left: 7rem;
+        left: 0rem;
+        margin-left: 39%;
     }
 
     #text-about1{
