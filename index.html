@@ -13,51 +13,54 @@
 
     <header>
 
-        <!-- mobile uniquement-->
-
-        <div class="menu-burger">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="images/icones/menu.svg" alt="Icône menu" class="icon-menu">
-            </a>
-
-            <div id="myLinks">
-                <a href="#about-section">Qui sommes-nous ?</a>
-                <a href="pizzasPage.html">Nos pizzas</a>
-                <a href="commandePage.html">Commander</a>
+        <div class="header1">
+            <!-- mobile uniquement-->
+    
+            <div class="menu-burger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/icones/menu.svg" alt="Icône menu" class="icon-menu">
+                </a>
+    
+                <div id="myLinks">
+                    <a href="#about-section">Qui sommes-nous ?</a>
+                    <a href="pizzasPage.html">Nos pizzas</a>
+                    <a href="commandePage.html">Commander</a>
+                </div>
             </div>
-        </div>
-        
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
                 }
-            }
-        </script>
+            </script>
+    
+            <!-- -->
+    
+            <a href="index.html" class="logo"><img src="images/logos/logo.png" alt="Logo Chez Jonathan" class="logo-image" width="100px" height="100px"></a>
+    
+            <!-- mobile uniquement-->
+    
+            <a href="contactPage.html"><img src="images/icones/phone.png" class="icon-phone" alt="Icône Téléphone"></a>
+    
+            <!-- -->
+    
+            <div class="header-nologo">
+                <nav>
+                    <ul>
+                        <li><a href="#about-section">Qui sommes-nous ?</a></li>
+                        <li><a href="pizzasPage.html">Nos pizzas</a></li>
+                        <li><a href="commandePage.html">Commander</a></li>
+                    </ul>
+                </nav>
+    
+                <a href="contactPage.html" class="button button-white" id="button-contact">Nous contacter</a>
+            </div>
 
-        <!-- -->
-
-        <a href="index.html" class="logo"><img src="images/logos/logo.png" alt="Logo Chez Jonathan" class="logo-image" width="100px" height="100px"></a>
-
-        <!-- mobile uniquement-->
-
-        <a href="contactPage.html"><img src="images/icones/phone.png" class="icon-phone" alt="Icône Téléphone"></a>
-
-        <!-- -->
-
-        <div class="header-nologo">
-            <nav>
-                <ul>
-                    <li><a href="#about-section">Qui sommes-nous ?</a></li>
-                    <li><a href="pizzasPage.html">Nos pizzas</a></li>
-                    <li><a href="commandePage.html">Commander</a></li>
-                </ul>
-            </nav>
-
-            <a href="contactPage.html" class="button button-white" id="button-contact">Nous contacter</a>
         </div>
 
     </header>
